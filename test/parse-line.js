@@ -92,7 +92,7 @@ describe("irc.parseMessage", function() {
 
     _.each(checks, function(result, line) {
         it('parse ' + line, function() {
-            JSON.stringify(result).equal(JSON.stringify(parseMessage(line)));
+            JSON.stringify(result).should.equal(JSON.stringify(parseMessage(line)));
         });
     });
 });
