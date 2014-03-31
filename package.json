@@ -15,7 +15,7 @@
         "mail" : "martyn@dollyfish.net.nz",
         "url" : "http://github.com/martynsmith/node-irc/issues"
     },
-    "main" : "lib/ircClient",
+    "main" : "lib/client",
     "engines" : { "node" : ">=0.4.0" },
     "licenses" : [ {
         "type" : "GPL",
