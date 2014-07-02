@@ -1,4 +1,4 @@
-var irc  = require('../lib/irc.js');
+var parseMessage  = require('../lib/parseMessage.js');
 var should = require('should');
 var _ = require('underscore');
 
@@ -92,7 +92,7 @@ describe("irc.parseMessage", function() {
 
     _.each(checks, function(result, line) {
         it('parse ' + line, function() {
-            JSON.stringify(result).should.equal(JSON.stringify(irc.parseMessage(line)));
+            JSON.stringify(result).should.equal(JSON.stringify(parseMessage(line)));
         });
     });
 });
